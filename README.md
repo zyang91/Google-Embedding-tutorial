@@ -3,7 +3,7 @@ Zhanchao Yang
 
 
 
-Credit: 
+Credit:
 - [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
 - [Google PDFM Embedding](https://github.com/google-research/population-dynamics)
 
@@ -20,5 +20,5 @@ PDFM Embeddings can be applied to a wide range of geospatial prediction tasks, s
 - Socioeconomic Factors: Modeling economic indicators and living conditions.
 - Retail: Identifying promising locations for new stores, market expansion, and demand forecasting.
 - Marketing and Sales: Characterizing high-performance regions and identifying similar areas to optimize marketing and sales efforts.
-  
+
 By incorporating spatial relationships and diverse feature types, these embeddings serve as a powerful tool for geospatial predictions.
