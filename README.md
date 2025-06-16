@@ -3,9 +3,9 @@ Zhanchao Yang
 
 
 
-Credit: [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
-
-[Google PDFM Embedding](https://github.com/google-research/population-dynamics)
+Credit: 
+- [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
+- [Google PDFM Embedding](https://github.com/google-research/population-dynamics)
 
 **ALL Exert from original Repo, all rights reserved to original author!**
 
