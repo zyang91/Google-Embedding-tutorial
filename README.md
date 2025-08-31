@@ -1,12 +1,15 @@
 # Google Embedding test
-Zhanchao Yang
+**Zhanchao Yang**
 
+## Type of Embedding
 - PDFM Embedding
 - Google Earth Embedding
 
 Credit:
 - [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
+- [Dr. Qiusheng Wu Google Earth Embedding tutorial](youtube.com/watch?v=EGL7fXyA7-U&feature=youtu.be)
 - [Google PDFM Embedding](https://github.com/google-research/population-dynamics)
+- [Google Earth Embedding](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)
 
 **ALL Exert from original Repo, all rights reserved to original author!**
 
