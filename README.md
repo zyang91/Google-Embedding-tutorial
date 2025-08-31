@@ -7,9 +7,10 @@
 
 Credit:
 - [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
-- [Dr. Qiusheng Wu Google Earth Embedding tutorial](youtube.com/watch?v=EGL7fXyA7-U&feature=youtu.be)
+- [Dr. Qiusheng Wu Google Earth Embedding tutorial](https://leafmap.org/maplibre/AlphaEarth)
+- [Google official Javascript Satellite Embedding tutorial](https://developers.google.com/earth-engine/tutorials/community/satellite-embedding-02-unsupervised-classification)
 - [Google PDFM Embedding](https://github.com/google-research/population-dynamics)
-- [Google Earth Embedding](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)
+- [Google Earth Satellite Embedding](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)
 
 **ALL Exert from original Repo, all rights reserved to original author!**
 
