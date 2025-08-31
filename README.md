@@ -1,7 +1,8 @@
-# PDFM test
+# Google Embedding test
 Zhanchao Yang
 
-
+- PDFM Embedding
+- Google Earth Embedding
 
 Credit:
 - [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
