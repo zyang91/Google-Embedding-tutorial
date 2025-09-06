@@ -8,11 +8,11 @@
 Credit:
 - [Dr. Qiusheng Wu PDFM tutorial](https://github.com/opengeos/GeoAI-Tutorials)
 - [Dr. Qiusheng Wu Google Earth Embedding tutorial](https://leafmap.org/maplibre/AlphaEarth)
-- [Google official Javascript Satellite Embedding tutorial](https://developers.google.com/earth-engine/tutorials/community/satellite-embedding-02-unsupervised-classification)
+- [Google official JavaScript Satellite Embedding tutorial](https://developers.google.com/earth-engine/tutorials/community/satellite-embedding-02-unsupervised-classification)
 - [Google PDFM Embedding](https://github.com/google-research/population-dynamics)
 - [Google Earth Satellite Embedding](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL)
 
-**ALL Exert from original Repo, all rights reserved to original author!**
+**ALL Exert or modify from original Repo, all rights reserved to the original author!**
 
 ## Population Dynamics Foundation Model (PDFM) Embeddings
 PDFM Embeddings are condensed vector representations designed to encapsulate the complex, multidimensional interactions among human behaviors, environmental factors, and local contexts at specific locations. These embeddings capture patterns in aggregated data such as search trends, busyness trends, and environmental conditions (maps, air quality, temperature), providing a rich, location-specific snapshot of how populations engage with their surroundings. Aggregated over space and time, these embeddings ensure privacy while enabling nuanced spatial analysis and prediction for applications ranging from public health to socioeconomic modeling.
