@@ -1,4 +1,4 @@
-# Google Embedding test
+# Google Embedding tutorial
 **Zhanchao Yang**
 
 ## Type of Embedding
