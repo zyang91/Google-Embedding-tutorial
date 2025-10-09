@@ -1,0 +1,47 @@
+/*-- scss:uses --*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/*-- scss:defaults --*/
+/* (empty) */
+
+/*-- scss:rules --*/
+:root {
+  /* serif setup */
+  --r-main-font: "Source Serif 4", Georgia, "Times New Roman", Times, serif;
+  --r-heading-font: "Source Serif 4", Georgia, "Times New Roman", Times, serif;
+  --r-code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* ↑ Increase overall size here */
+  --r-main-font-size: 34px;     /* up from 28px — body text */
+  --r-code-font-size: 1.0em;
+
+  /* heading sizes */
+  --r-heading1-size: 2.4em;
+  --r-heading2-size: 1.8em;
+  --r-heading3-size: 1.4em;
+
+  --r-line-height: 1.5;
+}
+
+/* Title slide font boost */
+.reveal .slides section.title-slide h1 {
+  font-size: 2.8em;
+  letter-spacing: 0.2px;
+}
+.reveal .slides section.title-slide h2 {
+  font-size: 1.3em;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+/* Code blocks */
+.reveal pre code {
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Links */
+.reveal a {
+  text-underline-offset: 2px;
+}

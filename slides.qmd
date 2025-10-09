@@ -1,0 +1,97 @@
+---
+title: "Satellite and Population Embedding"
+subtitle: "Powerful GeoAI Tools or Overrated?" 
+author: 
+  - name: "Zhanchao Yang"
+    email: "zhanchao@upenn.edu"
+    affiliations:
+      - name: "University of Pennsylvania"
+format: 
+  revealjs:
+    slide-number: true
+    theme: 
+      - serif
+      - custom.scss
+    transition: fade
+    logo: images/logo.png
+    footer: '[Github](https://github.com/zyang91/Google-Embedding-tutorial)'
+editor: visual
+---
+
+## About Me
+
+::: columns
+::: {.column width="40%"}
+
+![](images/Zhanchao.jpeg){top="170" left="30" width="350" height="500"}
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="57%"}
+### Zhanchao Yang
+- Master of City Planning (MCP)
+- Master of Urban Spatial Analytics (MUSA)
+- Bachelor of Arts in Geography, SUNY Binghamton
+- Research Assistant, Weitzman School of Design
+:::
+:::
+
+## What is Embeddings?
+
+<br>
+
+<span style="font-size: 1.3em;">
+In general terms, embeddings are **numerical representations** of complex information that capture the **most important features or relationships** in a simplified, machine-readable form.
+</span>
+
+## Blackbox Nature of Embeddings
+
+- The Embeddings generally generated through various neural network models (GNN or CNN) that trained on a large datasets.
+- The exact architecture and training process can vary widely depending on the specific application and data type. 
+- The company or research institutions that developed the embeddings may not disclose the full details of their models due to proprietary or privacy reasons. 
+
+## Population Dynamics Foundation (PDFM) Embeddings
+::: columns
+::: {.column width="50%"}
+- Developed by Google Research (Google Deep Mind) in 2024.
+- Input:
+  - Census data
+  - Searching Trends
+  - Other geospatial data
+- Output:
+  - Multi-dimensional vectors (represent population characteristics and dynamics).
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+![](images/PDFM1.png){top="100" width="600" height="400"}
+<span style="font-size: 0.8em;">
+Trained by a Graph Neural Network (GNN) Model
+</span>
+:::
+
+:::
+
+## How PDFM Embeddings look like?
+
+## Applications of PDFM Embeddings
+
+## Demo 1: Using PDFM Embeddings to predict housing prices
+
+## Satellite Foundation Model (SFM) Embeddings
+
+## Satellite Embeddings with Google Earth Engine (GEE)
+
+## Applications of SFM Embeddings
+
+## Demo 2: Using SFM Embeddings to do Land Cover Classification
+
+## Limitations and Concerns
+
+## Summary and Conclusions
+
+## References
