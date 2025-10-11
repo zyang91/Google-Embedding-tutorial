@@ -2,7 +2,7 @@
 **Zhanchao Yang**
 
 
-## GIS day lightning talk for University of Pennsylvania
+### GIS day lightning talk for the University of Pennsylvania
 11.19.2025
 
 ### Topic

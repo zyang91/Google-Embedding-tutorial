@@ -1,15 +1,15 @@
 ---
 title: "Satellite and Population Embedding"
-subtitle: "Powerful GeoAI Tools or Overrated?" 
-author: 
+subtitle: "Powerful GeoAI Tools or Overrated?"
+author:
   - name: "Zhanchao Yang"
     email: "zhanchao@upenn.edu"
     affiliations:
       - name: "University of Pennsylvania"
-format: 
+format:
   revealjs:
     slide-number: true
-    theme: 
+    theme:
       - serif
       - custom.scss
     transition: fade
@@ -49,8 +49,8 @@ In general terms, embeddings are **numerical representations** of complex inform
 ## Blackbox Nature of Embeddings
 
 - The Embeddings generally generated through various neural network models (GNN or CNN) that trained on a large datasets.
-- The exact architecture and training process can vary widely depending on the specific application and data type. 
-- The company or research institutions that developed the embeddings may not disclose the full details of their models due to proprietary or privacy reasons. 
+- The exact architecture and training process can vary widely depending on the specific application and data type.
+- The company or research institutions that developed the embeddings may not disclose the full details of their models due to proprietary or privacy reasons.
 
 ## Population Dynamics Foundation (PDFM) Embeddings
 ::: columns
