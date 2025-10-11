@@ -42,7 +42,7 @@ editor: visual
 
 <br>
 
-[ In general terms, embeddings are **numerical representations** of complex information that capture the **most important features or relationships** in a simplified, machine-readable form. ]{style="font-size: 1.3em;"}
+[In general terms, embeddings are **numerical representations** of complex information that capture the **most important features or relationships** in a simplified, machine-readable form.]{style="font-size: 1.3em;"}
 
 ## Blackbox Nature of Embeddings
 
@@ -67,7 +67,7 @@ editor: visual
 :::
 
 ::: {.column width="47%"}
-![](images/PDFM1.png){top="100" width="600" height="400"} [ Trained by a Graph Neural Network (GNN) Model ]{style="font-size: 0.8em;"}
+![](images/PDFM1.png){top="100" width="600" height="400"} [Trained by a Graph Neural Network (GNN) Model]{style="font-size: 0.8em;"}
 :::
 ::::::
 
@@ -188,7 +188,7 @@ editor: visual
 -   Environmental changes
 -   Temporal dynamics
 
-[ Trained on massive satellite imagery corpus using self-supervised learning ]{style="font-size: 0.9em;"}
+[Trained on massive satellite imagery corpus using self-supervised learning]{style="font-size: 0.9em;"}
 :::
 ::::::
 
@@ -217,7 +217,7 @@ editor: visual
 ::: {.column width="47%"}
 **Example Use:**
 
-```python
+``` python
 # Load embeddings
 dataset = ee.ImageCollection(
   "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL"
@@ -304,7 +304,7 @@ dot_prod = image1.multiply(image2)
 5.  Apply to entire region
 6.  Validate results
 
-[ Uses Earth Engine's cloud computing for scalability ]{style="font-size: 0.9em;"}
+[Uses Earth Engine's cloud computing for scalability]{style="font-size: 0.9em;"}
 :::
 ::::::
 
@@ -380,7 +380,7 @@ dot_prod = image1.multiply(image2)
 
 <br>
 
-**Final Verdict:** [ Powerful GeoAI tools, but use with caution and critical thinking! ]{style="font-size: 1.1em; font-weight: bold;"}
+**Final Verdict:** [Powerful GeoAI tools, but use with caution and critical thinking!]{style="font-size: 1.1em; font-weight: bold;"}
 :::
 ::::::
 
