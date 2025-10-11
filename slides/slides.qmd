@@ -1,15 +1,15 @@
 ---
 title: "Satellite and Population Embedding"
-subtitle: "Powerful GeoAI Tools or Overrated?" 
-author: 
+subtitle: "Powerful GeoAI Tools or Overrated?"
+author:
   - name: "Zhanchao Yang"
     email: "zhanchao@upenn.edu"
     affiliations:
       - name: "University of Pennsylvania"
-format: 
+format:
   revealjs:
     slide-number: true
-    theme: 
+    theme:
       - serif
       - custom.scss
     transition: fade
