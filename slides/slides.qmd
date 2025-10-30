@@ -46,9 +46,11 @@ editor: visual
 
 ## Blackbox Nature of Embeddings
 
--   The Embeddings generally generated through various neural network models (GNN or CNN) that trained on a large datasets.
--   The exact architecture and training process can vary widely depending on the specific application and data type.
--   The company or research institutions that developed the embeddings may not disclose the full details of their models due to proprietary or privacy reasons.
+<br>
+
+-   Generated through various neural network models (GNN or CNN) trained on a large datasets.
+-   Exact architecture and training process vary widely.
+-   The company or research institutions may not disclose the full details of their models.
 
 ## Population Dynamics Foundation (PDFM) Embeddings
 
@@ -67,7 +69,7 @@ editor: visual
 :::
 
 ::: {.column width="47%"}
-![](images/PDFM1.png){top="100" width="600" height="400"} [Trained by a Graph Neural Network (GNN) Model]{style="font-size: 0.8em;"}
+![](images/PDFM1.png){top="100" width="600" height="400"}
 :::
 ::::::
 
@@ -88,97 +90,57 @@ editor: visual
 :::
 
 ::: {.column width="47%"}
-**Key Properties:**
 
--   Standardized across locations
--   Privacy-preserving (aggregated data)
--   Ready for machine learning models
--   Can be used for similarity analysis
+
 :::
 ::::::
 
 ## Applications of PDFM Embeddings
 
-:::::: columns
-::: {.column width="50%"}
+
 **Health & Social Services:**
 
 -   Disease prevalence prediction
--   Public health risk assessment
 -   Healthcare resource allocation
 
 **Economic Analysis:**
 
 -   Socioeconomic indicators modeling
 -   Income and poverty estimation
--   Economic development planning
-:::
 
-::: {.column width="3%"}
-:::
+**Urban Planning:**
 
-::: {.column width="47%"}
-**Business & Retail:**
+-   Population growth forecasting
+-   POI and hotspot prediction
 
--   Store location optimization
--   Market demand forecasting
--   Customer segmentation
 
-**Marketing & Sales:**
-
--   Identifying high-performance regions
--   Finding similar market areas
--   Campaign targeting
-:::
-::::::
 
 ## Demo 1: Using PDFM Embeddings to predict housing prices
 
-:::::: columns
-::: {.column width="50%"}
 **Dataset:**
 
 -   Zillow Home Value Index (ZHVI) by ZIP code
 -   PDFM embeddings (330 features)
--   Inner join on ZIP code
 
 **Model:**
 
--   Linear Regression
--   Input: 330 embedding features
+-   Linear Regression (Stepwise regression)
+-   Data mining approaches
 -   Output: Predicted home prices
-:::
 
-::: {.column width="3%"}
-:::
 
-::: {.column width="47%"}
-**Why it works:**
-
--   Embeddings capture:
-    -   Zip code/County level characteristics
-    -   Economic activity patterns
-    -   Demographics signals
--   No need for manual feature engineering
-:::
-::::::
 
 ## Satellite Foundation Model (SFM) Embeddings
 
-:::::: columns
-::: {.column width="50%"}
 -   Developed by Google Research
 -   Based on Sentinel-2 satellite imagery
 -   **Global coverage** (2017-2023)
 -   Spatial resolution: 10 meters
 -   Available through Google Earth Engine
-:::
 
-::: {.column width="3%"}
-:::
 
-::: {.column width="47%"}
-**What they capture:**
+
+## What they capture
 
 -   Land cover patterns
 -   Vegetation characteristics
@@ -187,8 +149,7 @@ editor: visual
 -   Temporal dynamics
 
 [Trained on massive satellite imagery corpus using self-supervised learning]{style="font-size: 0.9em;"}
-:::
-::::::
+
 
 ## Satellite Embeddings with Google Earth Engine (GEE)
 
@@ -203,7 +164,6 @@ editor: visual
 -   Extract embeddings for points/regions
 -   Compare temporal changes
 -   Calculate similarity (dot product)
-
 
 ## Applications of SFM Embeddings
 
@@ -220,7 +180,6 @@ editor: visual
 -   Long-term trend analysis
 -   Before/after comparisons
 -   Similarity searches across time
-
 
 ## Demo 2: Satellite Embeddings for Land Cover Classification
 
@@ -247,7 +206,6 @@ editor: visual
 
 [Uses Earth Engine's cloud computing for scalability]{style="font-size: 0.9em;"}
 
-
 ## Limitations and Concerns
 
 **Interpretability Issues:**
@@ -259,7 +217,6 @@ editor: visual
 
 -   May encode historical biases
 -   Risk of perpetuating spatial inequalities
-
 
 **Technical Limitations:**
 
@@ -286,8 +243,8 @@ editor: visual
 -   Be aware of limitations and biases
 
 ## Final Verdict
-[Powerful GeoAI tools, but use with caution and critical thinking!]{style="font-size: 1.1em; font-weight: bold;"}
 
+[Powerful GeoAI tools, but use with caution and critical thinking!]{style="font-size: 1.1em; font-weight: bold;"}
 
 ## References
 

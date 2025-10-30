@@ -6,8 +6,8 @@
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.33">
 
   <meta name="author" content="Zhanchao Yang">
   <title>Satellite and Population Embedding</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-9d1867e81adb192d35d2d3337a9e0b78.css">
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-851112658806acf7ad3e4e5bec867156.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -169,10 +169,11 @@ Zhanchao Yang
 </section>
 <section id="blackbox-nature-of-embeddings" class="slide level2">
 <h2>Blackbox Nature of Embeddings</h2>
+<p><br></p>
 <ul>
-<li>The Embeddings generally generated through various neural network models (GNN or CNN) that trained on a large datasets.</li>
-<li>The exact architecture and training process can vary widely depending on the specific application and data type.</li>
-<li>The company or research institutions that developed the embeddings may not disclose the full details of their models due to proprietary or privacy reasons.</li>
+<li>Generated through various neural network models (GNN or CNN) trained on a large datasets.</li>
+<li>Exact architecture and training process vary widely.</li>
+<li>The company or research institutions may not disclose the full details of their models.</li>
 </ul>
 </section>
 <section id="population-dynamics-foundation-pdfm-embeddings" class="slide level2">
@@ -195,7 +196,7 @@ Zhanchao Yang
 </div><div class="column" style="width:3%;">
 
 </div><div class="column" style="width:47%;">
-<p><img data-src="images/PDFM1.png" data-top="100" width="600" height="400"> <span style="font-size: 0.8em;">Trained by a Graph Neural Network (GNN) Model</span></p>
+<p><img data-src="images/PDFM1.png" data-top="100" width="600" height="400"></p>
 </div></div>
 </section>
 <section id="how-pdfm-embeddings-look-like" class="slide level2">
@@ -216,83 +217,43 @@ Zhanchao Yang
 </div><div class="column" style="width:3%;">
 
 </div><div class="column" style="width:47%;">
-<p><strong>Key Properties:</strong></p>
-<ul>
-<li>Standardized across locations</li>
-<li>Privacy-preserving (aggregated data)</li>
-<li>Ready for machine learning models</li>
-<li>Can be used for similarity analysis</li>
-</ul>
+
 </div></div>
 </section>
 <section id="applications-of-pdfm-embeddings" class="slide level2">
 <h2>Applications of PDFM Embeddings</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Health &amp; Social Services:</strong></p>
 <ul>
 <li>Disease prevalence prediction</li>
-<li>Public health risk assessment</li>
 <li>Healthcare resource allocation</li>
 </ul>
 <p><strong>Economic Analysis:</strong></p>
 <ul>
 <li>Socioeconomic indicators modeling</li>
 <li>Income and poverty estimation</li>
-<li>Economic development planning</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>Business &amp; Retail:</strong></p>
+<p><strong>Urban Planning:</strong></p>
 <ul>
-<li>Store location optimization</li>
-<li>Market demand forecasting</li>
-<li>Customer segmentation</li>
+<li>Population growth forecasting</li>
+<li>POI and hotspot prediction</li>
 </ul>
-<p><strong>Marketing &amp; Sales:</strong></p>
-<ul>
-<li>Identifying high-performance regions</li>
-<li>Finding similar market areas</li>
-<li>Campaign targeting</li>
-</ul>
-</div></div>
 </section>
 <section id="demo-1-using-pdfm-embeddings-to-predict-housing-prices" class="slide level2">
 <h2>Demo 1: Using PDFM Embeddings to predict housing prices</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Dataset:</strong></p>
 <ul>
 <li>Zillow Home Value Index (ZHVI) by ZIP code</li>
 <li>PDFM embeddings (330 features)</li>
-<li>Inner join on ZIP code</li>
 </ul>
 <p><strong>Model:</strong></p>
 <ul>
-<li>Linear Regression</li>
-<li>Input: 330 embedding features</li>
+<li>Linear Regression (Stepwise regression)</li>
+<li>Data mining approaches</li>
 <li>Output: Predicted home prices</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>Why it works:</strong></p>
-<ul>
-<li>Embeddings capture:
-<ul>
-<li>Zip code/County level characteristics</li>
-<li>Economic activity patterns</li>
-<li>Demographics signals</li>
-</ul></li>
-<li>No need for manual feature engineering</li>
-</ul>
-</div></div>
 </section>
 <section id="satellite-foundation-model-sfm-embeddings" class="slide level2">
 <h2>Satellite Foundation Model (SFM) Embeddings</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li>Developed by Google Research</li>
 <li>Based on Sentinel-2 satellite imagery</li>
@@ -300,10 +261,9 @@ Zhanchao Yang
 <li>Spatial resolution: 10 meters</li>
 <li>Available through Google Earth Engine</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>What they capture:</strong></p>
+</section>
+<section id="what-they-capture" class="slide level2">
+<h2>What they capture</h2>
 <ul>
 <li>Land cover patterns</li>
 <li>Vegetation characteristics</li>
@@ -312,7 +272,6 @@ Zhanchao Yang
 <li>Temporal dynamics</li>
 </ul>
 <p><span style="font-size: 0.9em;">Trained on massive satellite imagery corpus using self-supervised learning</span></p>
-</div></div>
 </section>
 <section id="satellite-embeddings-with-google-earth-engine-gee" class="slide level2">
 <h2>Satellite Embeddings with Google Earth Engine (GEE)</h2>
@@ -625,7 +584,7 @@ Zhanchao Yang
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -699,14 +658,13 @@ Zhanchao Yang
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
