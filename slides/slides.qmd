@@ -156,12 +156,10 @@ editor: visual
 **Why it works:**
 
 -   Embeddings capture:
-    -   Neighborhood characteristics
+    -   Zip code/County level characteristics
     -   Economic activity patterns
     -   Demographics signals
-    -   Mobility trends
 -   No need for manual feature engineering
--   Spatial relationships implicitly encoded
 :::
 ::::::
 
@@ -169,10 +167,10 @@ editor: visual
 
 :::::: columns
 ::: {.column width="50%"}
--   Developed by Google Research in 2024
+-   Developed by Google Research
 -   Based on Sentinel-2 satellite imagery
--   **Annual global coverage** (2017-2023)
--   Spatial resolution: 10 meters per pixel
+-   **Global coverage** (2017-2023)
+-   Spatial resolution: 10 meters
 -   Available through Google Earth Engine
 :::
 
@@ -194,14 +192,10 @@ editor: visual
 
 ## Satellite Embeddings with Google Earth Engine (GEE)
 
-:::::: columns
-::: {.column width="50%"}
 **Dataset:**
 
 -   `GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL`
--   65 bands (dimensions) per pixel
--   Annual composites
--   Global coverage
+-   65 bands
 
 **Key Operations:**
 
@@ -209,59 +203,16 @@ editor: visual
 -   Extract embeddings for points/regions
 -   Compare temporal changes
 -   Calculate similarity (dot product)
-:::
 
-::: {.column width="3%"}
-:::
-
-::: {.column width="47%"}
-**Example Use:**
-
-``` python
-# Load embeddings
-dataset = ee.ImageCollection(
-  "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL"
-)
-
-# Get year 1 and year 2
-image1 = dataset.filterDate(
-  "2017-01-01", "2018-01-01"
-).first()
-
-# Compare similarity
-dot_prod = image1.multiply(image2)
-  .reduce(ee.Reducer.sum())
-```
-:::
-::::::
 
 ## Applications of SFM Embeddings
 
-:::::: columns
-::: {.column width="50%"}
-**Environmental Monitoring:**
+**Environmental and Land Use Planning**
 
--   Deforestation tracking
 -   Urban sprawl analysis
--   Agricultural land assessment
--   Climate change impacts
-
-**Land Use Planning:**
-
 -   Land cover classification
 -   Change detection
 -   Development planning
-:::
-
-::: {.column width="3%"}
-:::
-
-::: {.column width="47%"}
-**Scientific Research:**
-
--   Biodiversity assessment
--   Ecosystem health monitoring
--   Natural disaster impact analysis
 
 **Temporal Analysis:**
 
@@ -269,16 +220,12 @@ dot_prod = image1.multiply(image2)
 -   Long-term trend analysis
 -   Before/after comparisons
 -   Similarity searches across time
-:::
-::::::
 
-## Demo 2: Using SFM Embeddings to do Land Cover Classification
 
-:::::: columns
-::: {.column width="50%"}
+## Demo 2: Satellite Embeddings for Land Cover Classification
+
 **Approach:**
 
--   Extract satellite embeddings for study area
 -   Use embeddings as features
 -   Train classification model
 -   Predict land cover types
@@ -288,14 +235,8 @@ dot_prod = image1.multiply(image2)
 -   No need to process raw imagery
 -   Pre-trained representations
 -   Faster than traditional methods
--   Works with limited training data
-:::
 
-::: {.column width="3%"}
-:::
-
-::: {.column width="47%"}
-**Workflow:**
+## Workflow
 
 1.  Define area of interest
 2.  Load embedding ImageCollection
@@ -305,84 +246,48 @@ dot_prod = image1.multiply(image2)
 6.  Validate results
 
 [Uses Earth Engine's cloud computing for scalability]{style="font-size: 0.9em;"}
-:::
-::::::
+
 
 ## Limitations and Concerns
 
-:::::: columns
-::: {.column width="50%"}
 **Interpretability Issues:**
 
 -   Black box representations
--   Difficult to understand what each dimension means
--   Hard to validate learned patterns
 -   Limited transparency in training process
 
 **Bias and Fairness:**
 
 -   May encode historical biases
--   Training data may not represent all regions equally
 -   Risk of perpetuating spatial inequalities
-:::
 
-::: {.column width="3%"}
-:::
 
-::: {.column width="47%"}
 **Technical Limitations:**
 
--   Temporal coverage limited (2017-2023)
 -   Resolution constraints (10m for satellite)
--   Requires significant computational resources
 -   Updates not in real-time
 
-**Trust and Decision-Making:**
-
--   Should not be sole basis for critical decisions
--   Needs domain expertise for validation
--   Privacy concerns with aggregated data
--   Proprietary models limit reproducibility
-:::
-::::::
+...
 
 ## Summary and Conclusions
 
-:::::: columns
-::: {.column width="50%"}
 **The Promise:**
 
 -   Powerful tools for spatial analysis
--   Reduce feature engineering effort
--   Enable transfer learning
--   Scale to large areas
--   Capture complex patterns
+-   Capture complex patterns (Privacy concerns)
 
 **The Reality:**
 
--   Not a silver bullet
 -   Require careful validation
--   Need domain expertise
--   Should complement, not replace, traditional methods
-:::
+-   Complement, not replace
 
-::: {.column width="3%"}
-:::
-
-::: {.column width="47%"}
 **Best Practices:**
 
 -   Validate predictions thoroughly
--   Combine with domain knowledge
 -   Be aware of limitations and biases
--   Use for exploratory analysis
--   Always question results
 
-<br>
+## Final Verdict
+[Powerful GeoAI tools, but use with caution and critical thinking!]{style="font-size: 1.1em; font-weight: bold;"}
 
-**Final Verdict:** [Powerful GeoAI tools, but use with caution and critical thinking!]{style="font-size: 1.1em; font-weight: bold;"}
-:::
-::::::
 
 ## References
 

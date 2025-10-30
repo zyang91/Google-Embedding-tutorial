@@ -6,8 +6,8 @@
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Zhanchao Yang">
   <title>Satellite and Population Embedding</title>
@@ -28,74 +28,8 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-851112658806acf7ad3e4e5bec867156.css">
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-9d1867e81adb192d35d2d3337a9e0b78.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -347,13 +281,11 @@ Zhanchao Yang
 <ul>
 <li>Embeddings capture:
 <ul>
-<li>Neighborhood characteristics</li>
+<li>Zip code/County level characteristics</li>
 <li>Economic activity patterns</li>
 <li>Demographics signals</li>
-<li>Mobility trends</li>
 </ul></li>
 <li>No need for manual feature engineering</li>
-<li>Spatial relationships implicitly encoded</li>
 </ul>
 </div></div>
 </section>
@@ -362,10 +294,10 @@ Zhanchao Yang
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Developed by Google Research in 2024</li>
+<li>Developed by Google Research</li>
 <li>Based on Sentinel-2 satellite imagery</li>
-<li><strong>Annual global coverage</strong> (2017-2023)</li>
-<li>Spatial resolution: 10 meters per pixel</li>
+<li><strong>Global coverage</strong> (2017-2023)</li>
+<li>Spatial resolution: 10 meters</li>
 <li>Available through Google Earth Engine</li>
 </ul>
 </div><div class="column" style="width:3%;">
@@ -384,14 +316,10 @@ Zhanchao Yang
 </section>
 <section id="satellite-embeddings-with-google-earth-engine-gee" class="slide level2">
 <h2>Satellite Embeddings with Google Earth Engine (GEE)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Dataset:</strong></p>
 <ul>
 <li><code>GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL</code></li>
-<li>65 bands (dimensions) per pixel</li>
-<li>Annual composites</li>
-<li>Global coverage</li>
+<li>65 bands</li>
 </ul>
 <p><strong>Key Operations:</strong></p>
 <ul>
@@ -400,50 +328,15 @@ Zhanchao Yang
 <li>Compare temporal changes</li>
 <li>Calculate similarity (dot product)</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>Example Use:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Load embeddings</span></span>
-<span id="cb1-2"><a href=""></a>dataset <span class="op">=</span> ee.ImageCollection(</span>
-<span id="cb1-3"><a href=""></a>  <span class="st">"GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL"</span></span>
-<span id="cb1-4"><a href=""></a>)</span>
-<span id="cb1-5"><a href=""></a></span>
-<span id="cb1-6"><a href=""></a><span class="co"># Get year 1 and year 2</span></span>
-<span id="cb1-7"><a href=""></a>image1 <span class="op">=</span> dataset.filterDate(</span>
-<span id="cb1-8"><a href=""></a>  <span class="st">"2017-01-01"</span>, <span class="st">"2018-01-01"</span></span>
-<span id="cb1-9"><a href=""></a>).first()</span>
-<span id="cb1-10"><a href=""></a></span>
-<span id="cb1-11"><a href=""></a><span class="co"># Compare similarity</span></span>
-<span id="cb1-12"><a href=""></a>dot_prod <span class="op">=</span> image1.multiply(image2)</span>
-<span id="cb1-13"><a href=""></a>  .<span class="bu">reduce</span>(ee.Reducer.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
 </section>
 <section id="applications-of-sfm-embeddings" class="slide level2">
 <h2>Applications of SFM Embeddings</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Environmental Monitoring:</strong></p>
+<p><strong>Environmental and Land Use Planning</strong></p>
 <ul>
-<li>Deforestation tracking</li>
 <li>Urban sprawl analysis</li>
-<li>Agricultural land assessment</li>
-<li>Climate change impacts</li>
-</ul>
-<p><strong>Land Use Planning:</strong></p>
-<ul>
 <li>Land cover classification</li>
 <li>Change detection</li>
 <li>Development planning</li>
-</ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>Scientific Research:</strong></p>
-<ul>
-<li>Biodiversity assessment</li>
-<li>Ecosystem health monitoring</li>
-<li>Natural disaster impact analysis</li>
 </ul>
 <p><strong>Temporal Analysis:</strong></p>
 <ul>
@@ -452,15 +345,11 @@ Zhanchao Yang
 <li>Before/after comparisons</li>
 <li>Similarity searches across time</li>
 </ul>
-</div></div>
 </section>
-<section id="demo-2-using-sfm-embeddings-to-do-land-cover-classification" class="slide level2">
-<h2>Demo 2: Using SFM Embeddings to do Land Cover Classification</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="demo-2-satellite-embeddings-for-land-cover-classification" class="slide level2">
+<h2>Demo 2: Satellite Embeddings for Land Cover Classification</h2>
 <p><strong>Approach:</strong></p>
 <ul>
-<li>Extract satellite embeddings for study area</li>
 <li>Use embeddings as features</li>
 <li>Train classification model</li>
 <li>Predict land cover types</li>
@@ -470,12 +359,10 @@ Zhanchao Yang
 <li>No need to process raw imagery</li>
 <li>Pre-trained representations</li>
 <li>Faster than traditional methods</li>
-<li>Works with limited training data</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
-<p><strong>Workflow:</strong></p>
+</section>
+<section id="workflow" class="slide level2">
+<h2>Workflow</h2>
 <ol type="1">
 <li>Define area of interest</li>
 <li>Load embedding ImageCollection</li>
@@ -485,77 +372,47 @@ Zhanchao Yang
 <li>Validate results</li>
 </ol>
 <p><span style="font-size: 0.9em;">Uses Earth Engine’s cloud computing for scalability</span></p>
-</div></div>
 </section>
 <section id="limitations-and-concerns" class="slide level2">
 <h2>Limitations and Concerns</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Interpretability Issues:</strong></p>
 <ul>
 <li>Black box representations</li>
-<li>Difficult to understand what each dimension means</li>
-<li>Hard to validate learned patterns</li>
 <li>Limited transparency in training process</li>
 </ul>
 <p><strong>Bias and Fairness:</strong></p>
 <ul>
 <li>May encode historical biases</li>
-<li>Training data may not represent all regions equally</li>
 <li>Risk of perpetuating spatial inequalities</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
 <p><strong>Technical Limitations:</strong></p>
 <ul>
-<li>Temporal coverage limited (2017-2023)</li>
 <li>Resolution constraints (10m for satellite)</li>
-<li>Requires significant computational resources</li>
 <li>Updates not in real-time</li>
 </ul>
-<p><strong>Trust and Decision-Making:</strong></p>
-<ul>
-<li>Should not be sole basis for critical decisions</li>
-<li>Needs domain expertise for validation</li>
-<li>Privacy concerns with aggregated data</li>
-<li>Proprietary models limit reproducibility</li>
-</ul>
-</div></div>
+<p>…</p>
 </section>
 <section id="summary-and-conclusions" class="slide level2">
 <h2>Summary and Conclusions</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>The Promise:</strong></p>
 <ul>
 <li>Powerful tools for spatial analysis</li>
-<li>Reduce feature engineering effort</li>
-<li>Enable transfer learning</li>
-<li>Scale to large areas</li>
-<li>Capture complex patterns</li>
+<li>Capture complex patterns (Privacy concerns)</li>
 </ul>
 <p><strong>The Reality:</strong></p>
 <ul>
-<li>Not a silver bullet</li>
 <li>Require careful validation</li>
-<li>Need domain expertise</li>
-<li>Should complement, not replace, traditional methods</li>
+<li>Complement, not replace</li>
 </ul>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:47%;">
 <p><strong>Best Practices:</strong></p>
 <ul>
 <li>Validate predictions thoroughly</li>
-<li>Combine with domain knowledge</li>
 <li>Be aware of limitations and biases</li>
-<li>Use for exploratory analysis</li>
-<li>Always question results</li>
 </ul>
-<p><br></p>
-<p><strong>Final Verdict:</strong> <span style="font-size: 1.1em; font-weight: bold;">Powerful GeoAI tools, but use with caution and critical thinking!</span></p>
-</div></div>
+</section>
+<section id="final-verdict" class="slide level2">
+<h2>Final Verdict</h2>
+<p><span style="font-size: 1.1em; font-weight: bold;">Powerful GeoAI tools, but use with caution and critical thinking!</span></p>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
@@ -768,7 +625,7 @@ Zhanchao Yang
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -842,13 +699,14 @@ Zhanchao Yang
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
