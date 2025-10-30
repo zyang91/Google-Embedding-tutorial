@@ -91,6 +91,7 @@ editor: visual
 
 ::: {.column width="47%"}
 
+![](images/PDFM2.png){top="100" width="400" height="400"}
 
 :::
 ::::::
