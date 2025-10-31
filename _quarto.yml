@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Google Embeddings tutorial"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: slides/slides.qmd
+        text: Presentation
+            
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+
+execute:
+  freeze: auto

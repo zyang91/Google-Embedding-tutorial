@@ -69,10 +69,7 @@ editor: visual
 :::
 
 ::: {.column width="47%"}
-
-![](images/PDFM1.jpg){top="100" width="400" height="400"}
-
-
+![](images/PDFM1.jpg){top="100" width="600" height="400"}
 
 :::
 ::::::
@@ -94,14 +91,11 @@ editor: visual
 :::
 
 ::: {.column width="47%"}
-
-![](images/PDFM2.jpg){top="100" width="400" height="400"}
-
+![](images/PDFM2.jpg)
 :::
 ::::::
 
 ## Applications of PDFM Embeddings
-
 
 **Health & Social Services:**
 
@@ -118,8 +112,6 @@ editor: visual
 -   Population growth forecasting
 -   POI and hotspot prediction
 
-
-
 ## Demo 1: Using PDFM Embeddings to predict housing prices
 
 **Dataset:**
@@ -133,8 +125,6 @@ editor: visual
 -   Data mining approaches
 -   Output: Predicted home prices
 
-
-
 ## Satellite Foundation Model (SFM) Embeddings
 
 -   Developed by Google Research
@@ -142,8 +132,6 @@ editor: visual
 -   **Global coverage** (2017-2023)
 -   Spatial resolution: 10 meters
 -   Available through Google Earth Engine
-
-
 
 ## What they capture
 
@@ -154,7 +142,6 @@ editor: visual
 -   Temporal dynamics
 
 [Trained on massive satellite imagery corpus using self-supervised learning]{style="font-size: 0.9em;"}
-
 
 ## Satellite Embeddings with Google Earth Engine (GEE)
 
