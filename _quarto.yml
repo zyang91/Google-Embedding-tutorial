@@ -10,7 +10,7 @@ website:
         text: Home
       - href: slides/slides.qmd
         text: Presentation
-            
+
 format:
   html:
     theme: cosmo
